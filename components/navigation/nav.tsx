@@ -8,12 +8,22 @@ import { LogIn } from "lucide-react";
 export default async function Nav() {
   const session = await auth();
 
-  console.log("session",session);
+  console.log("session", session);
   return (
-    <header className="bg-slate-400 py-4">
+    <header className="py-8">
       <nav>
         <ul className="flex justify-between ">
-          <li>Logo</li>
+          <li>
+            <Link href={"/"}>
+              <Image
+                src="/logo.svg"
+                width={110}
+                height={50}
+                priority
+                alt="logo"
+              />
+            </Link>
+          </li>
 
           {!session ? (
             <li>

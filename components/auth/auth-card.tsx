@@ -24,7 +24,7 @@ export default function AuthCard({
   showSocials,
 }: AuthWrapperProps) {
   return (
-    <Card>
+    <Card className="text-center">
       <CardHeader>
         <CardTitle>{cardTitle}</CardTitle>
       </CardHeader>

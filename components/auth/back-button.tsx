@@ -10,7 +10,7 @@ type BackButtonProps = {
 
 export default function BackButton({ href, label }: BackButtonProps) {
   return (
-    <Button >
+    <Button className="font-medium w-full" asChild variant={"link"}>
       <Link href={href} aria-label={label}>
         {label}
       </Link>
